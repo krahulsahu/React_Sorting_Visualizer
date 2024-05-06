@@ -1,0 +1,22 @@
+.listBlocks {
+    background-color: #0f0b0d;
+    margin: 0 auto;
+    min-height: 520px;
+    min-width: 90%;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.listBlocks>.block {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    border-radius: 5px;
+    border-bottom-right-radius: none;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 2px;
+    text-align: center;
+    transition-duration: 10ms;
+    transition-property: height;
+    transition-timing-function: ease-in;
+}
