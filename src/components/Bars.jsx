@@ -21,19 +21,19 @@ const Bars = ({ blocks, compare, sorted, swap }) => {
     <div className="listBlocks">
       {blocks.map((block, i) => {
         const height = (block * 500) / blocks.length;
-        let bg = "turquoise";
+        let bg = "white";
 
         // i th element is being compared with the other element
         if (compare && (i === compare[0] || i === compare[1])) {
-          bg = "#ffff50";
+          bg = "Orange";
         }
 
         if (swap && (i === swap[0] || i === swap[1])) {
-          bg = "red";
+          bg = "DodgerBlue";
         }
         // i th element is in sorted position
         if (sorted && sorted.includes(i)) {
-          bg = "#4bc52e";
+          bg = "Violet";
         }
 
         const style = {
